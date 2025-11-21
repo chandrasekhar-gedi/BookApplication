@@ -18,4 +18,12 @@ public class BookService {
        return bookRepository.findByBooktitle(name);
 
     }
+
+    public Book updateBook(Book book) {
+        return bookRepository.save(book);
+    }
+
+    public void deleteBook(Integer id) {
+        bookRepository.deleteById(id);
+    }
 }
