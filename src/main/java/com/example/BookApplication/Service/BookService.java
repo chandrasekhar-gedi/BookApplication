@@ -13,4 +13,9 @@ public class BookService {
         return bookRepository.save(book);
 
     }
+
+    public Book getBookByName(String name) {
+       return bookRepository.findByBooktitle(name);
+
+    }
 }
